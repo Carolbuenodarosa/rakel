@@ -5,13 +5,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dra. Rakel | Estética de Alta Performance</title>
-
     <link
         href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600&family=Playfair+Display:wght@400;700&display=swap"
         rel="stylesheet">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-
     <style>
         :root {
             --marrom-rose: #b59690;
@@ -156,7 +154,6 @@
 </head>
 
 <body>
-
     <header>
         <div class="nav-content">
             <div class="logo">DRA. RAKEL</div>
@@ -167,20 +164,15 @@
             </nav>
         </div>
     </header>
-
     <section class="hero-container">
         <div class="hero-content" data-aos="fade-right">
             <h1>Ciência e Elegância</h1>
             <p>A união perfeita entre o rigor científico e o cuidado estético personalizado para realçar a sua melhor
-                versão.</p>
-            <br>
-            <a href="#contato" class="btn">Agendar Consulta</a>
+                versão.</p> <br> <a href="#contato" class="btn">Agendar Consulta</a>
         </div>
-        <div class="hero-image" data-aos="fade-left">
-            <img src="Captura de tela 2026-04-28 140021.png" alt="Dra. Rakel">
+        <div class="hero-image" data-aos="fade-left"> <img src="doutora.png" alt="Dra. Rakel">
         </div>
     </section>
-
     <main class="grid">
         <div class="card" data-aos="fade-up" data-aos-delay="100">
             <h3>Farmácia Clínica</h3>
@@ -198,35 +190,25 @@
     </main>
     <section class="clinic-block-wrapper" data-aos="fade-up">
         <div class="clinic-container">
-
             <div class="clinic-content">
-                <div class="clinic-logo-signature">
-                    <i class="fa-solid fa-mortar-pestle" style="color: var(--marrom-rose); font-size: 1.5rem;"></i>
-                    <span
+                <div class="clinic-logo-signature"> <i class="fa-solid fa-mortar-pestle"
+                        style="color: var(--marrom-rose); font-size: 1.5rem;"></i> <span
                         style="font-family: 'Playfair Display', serif; font-size: 1rem; color: #666; margin-left: 10px;">Dra.
-                        Rakel</span>
-                </div>
-
+                        Rakel</span> </div>
                 <h2>A beleza natural realçada é o reflexo de um cuidado técnico e seguro.</h2>
-
                 <p>Conheça os protocolos de alta performance desenvolvidos sob o rigor farmacêutico para valorizar a sua
                     essência.</p>
-
-                <div class="clinic-buttons">
-                    <a href="#procedimentos" class="btn-solid">Protocolos <i class="fa-solid fa-arrow-right"></i></a>
-                    <a href="https://wa.me/5546988214448?text=quero%20agendar" class="btn-outline">Consultoria</a>
+                <div class="clinic-buttons"> <a href="#procedimentos" class="btn-solid">Protocolos <i
+                            class="fa-solid fa-arrow-right"></i></a> <a
+                        href="https://wa.me/5546988214448?text=quero%20agendar" class="btn-outline">Consultoria</a>
                 </div>
             </div>
-
-            <div class="clinic-image-frame">
-                <img src="Gemini_Generated_Image_ic52teic52teic52.png" alt="Dra. Rakel - Cuidado Farmacêutico Estético">
-            </div>
-
+            <div class="clinic-image-frame"> <img src="Gemini_Generated_Image_ic52teic52teic52.png"
+                    alt="Dra. Rakel - Cuidado Farmacêutico Estético"> </div>
         </div>
     </section>
-
     <style>
-        /* Estilos para o Novo Bloco (Inspirado no exemplo) */
+        /* Estilos para o Novo Bloco */
         .clinic-block-wrapper {
             max-width: 1200px;
             margin: 80px auto;
@@ -235,20 +217,17 @@
 
         .clinic-container {
             background-color: var(--marrom-claro);
-            /* Fundo claro sutil */
             border-radius: 20px;
             display: grid;
             grid-template-columns: 1fr 1fr;
             gap: 30px;
             overflow: hidden;
-            /* Garante que a foto não saia da borda */
             box-shadow: 0 10px 40px rgba(0, 0, 0, 0.03);
         }
 
         /* Coluna de Texto */
         .clinic-content {
             padding: 60px 40px 60px 60px;
-            /* Mais espaço à esquerda */
             display: flex;
             flex-direction: column;
             justify-content: center;
@@ -277,10 +256,12 @@
             max-width: 400px;
         }
 
-        /* Botões (Estilo do exemplo) */
+        /* Botões */
         .clinic-buttons {
             display: flex;
             gap: 15px;
+            flex-wrap: wrap;
+            /* já ajuda em telas menores */
         }
 
         .btn-solid {
@@ -329,28 +310,60 @@
             width: 100%;
             height: 100%;
             object-fit: cover;
+            display: block;
+            /* remove espaço estranho */
         }
 
-        /* Responsividade para Celular */
+        /* ========================= */
+        /* RESPONSIVIDADE CORRIGIDA */
+        /* ========================= */
+
         @media (max-width: 900px) {
+
+            .clinic-block-wrapper {
+                margin: 40px auto;
+                padding: 0 15px;
+            }
+
             .clinic-container {
                 grid-template-columns: 1fr;
-                /* Coloca uma coluna sobre a outra */
+                border-radius: 15px;
             }
 
             .clinic-content {
-                padding: 50px;
+                padding: 30px 20px;
                 text-align: center;
                 align-items: center;
             }
 
+            .clinic-content h2 {
+                font-size: 1.4rem;
+            }
+
             .clinic-content p {
+                font-size: 0.85rem;
                 max-width: 100%;
             }
 
+            .clinic-buttons {
+                flex-direction: column;
+                width: 100%;
+            }
+
+            .btn-solid,
+            .btn-outline {
+                width: 100%;
+                justify-content: center;
+            }
+
             .clinic-image-frame {
-                height: 300px;
-                /* Fixa uma altura para a foto no mobile */
+                height: auto;
+            }
+
+            .clinic-image-frame img {
+                height: auto;
+                max-height: 300px;
+                object-fit: cover;
             }
         }
     </style>
@@ -362,32 +375,26 @@
                 <span style="color: var(--marrom-rose);">Linha Profissional</span>
             </h2>
         </div>
-
         <div class="products-grid">
             <div class="product-card large">
                 <div class="card-content">
                     <h3>Tecnologia Avançada</h3>
-                    <p>Produtos com ativos selecionados e alta tecnologia para resultados clínicos em casa.</p>
-                    <a href="#" class="btn-product">Ver Linha Completa</a>
+                    <p>Produtos com ativos selecionados e alta tecnologia para resultados clínicos em casa.</p> <a
+                        href="#" class="btn-product">Ver Linha Completa</a>
                 </div>
             </div>
-
-            <div class="product-card tall">
-                <img src="https://images.unsplash.com/photo-1598440947619-2c35fc9aa908?auto=format&fit=crop&q=80&w=600"
-                    alt="Produto">
-            </div>
-
+            <div class="product-card tall"> <img
+                    src="https://images.unsplash.com/photo-1598440947619-2c35fc9aa908?auto=format&fit=crop&q=80&w=600"
+                    alt="Produto"> </div>
             <div class="product-card wide">
                 <div class="card-content">
                     <h3>Protocolos Exclusivos</h3>
                     <p>Renove sua beleza com nossa linha de uso profissional desenvolvida especialmente para o seu tipo
-                        de pele.</p>
-                    <a href="#" class="btn-product">Conhecer Protocolos</a>
+                        de pele.</p> <a href="#" class="btn-product">Conhecer Protocolos</a>
                 </div>
             </div>
         </div>
     </section>
-
     <style>
         .products-section {
             max-width: 1200px;
@@ -477,17 +484,13 @@
     </style>
     <section class="footer-cta-container">
         <div class="footer-cta-content">
-
             <div class="newsletter-box">
                 <h3>Cadastre-se para receber nossa Newsletter</h3>
                 <p>Inscreva-se e seja o primeiro a saber sobre nossas últimas novidades, ofertas exclusivas e muito
                     mais.</p>
-                <form class="newsletter-form">
-                    <input type="email" placeholder="Endereço de e-mail" required>
-                    <button type="submit">Enviar</button>
-                </form>
+                <form class="newsletter-form"> <input type="email" placeholder="Endereço de e-mail" required> <button
+                        type="submit">Enviar</button> </form>
             </div>
-
             <div class="contact-box">
                 <h3>Atendimento ao cliente</h3>
                 <ul>
@@ -496,10 +499,8 @@
                     <li><i class="fa-solid fa-phone"></i> +55 (46) 98821-4448 - Comercial</li>
                 </ul>
             </div>
-
         </div>
     </section>
-
     <style>
         .footer-cta-container {
             width: 100%;
@@ -620,9 +621,7 @@
         }
     </style>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script>
-        AOS.init({ duration: 1000, once: true });
-    </script>
+    <script> AOS.init({ duration: 1000, once: true }); </script>
 </body>
 
 </html>
